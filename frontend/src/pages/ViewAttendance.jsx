@@ -25,7 +25,9 @@ const ViewAttendance = () => {
     const fetchAttendance = async () => {
       try {
         const res = await axios.get(
-          `${process.env.BACKEND_URI}/api/attendance/student/${studentId}`
+          `${
+            import.meta.env.VITE_BACKEND_URI
+          }/api/attendance/student/${studentId}`
         );
         setAttendanceData(res.data || {});
       } catch (err) {

@@ -21,7 +21,7 @@ const MarkAttendance = () => {
     const fetchTeaches = async () => {
       try {
         const res = await axios.get(
-          `${process.env.BACKEND_URI}/api/attendance/faculty/${facultyId}`
+          `${process.env.VITE_BACKEND_URI}/api/attendance/faculty/${facultyId}`
         );
         setTeaches(res.data?.teaches || []);
       } catch (err) {
@@ -39,7 +39,7 @@ const MarkAttendance = () => {
 
       try {
         const res = await axios.get(
-          `${process.env.BACKEND_URI}/api/attendance/students/${year}/${branch}/${subject}`
+          `${process.env.VITE_BACKEND_URI}/api/attendance/students/${year}/${branch}/${subject}`
         );
         setStudents(res.data || []);
         setAttendance({});
@@ -73,7 +73,7 @@ const MarkAttendance = () => {
 
     try {
       const res = await axios.post(
-        `${process.env.BACKEND_URI}/api/attendance/mark`,
+        `${import.meta.env.VITE_BACKEND_URI}/api/attendance/mark`,
         {
           facultyId,
           subject,

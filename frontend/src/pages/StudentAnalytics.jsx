@@ -32,7 +32,7 @@ const StudentAnalytics = () => {
     const fetchAnalytics = async () => {
       try {
         const res = await axios.get(
-          `${process.env.BACKEND_URI}/api/admin/student/${studentId}`
+          `${import.meta.env.VITE_BACKEND_URI}/api/admin/student/${studentId}`
         );
         setStudentData(res.data);
         setError("");
