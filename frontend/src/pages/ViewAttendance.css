@@ -1,0 +1,102 @@
+.attendance-view-container {
+  margin-top: 60px;
+  padding: 2rem;
+  background: #f5f8ff;
+}
+
+.subject-block {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-block h3 {
+  margin-bottom: 0.5rem;
+}
+
+.subject-block table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subject-block th,
+.subject-block td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.summary {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.subject-block {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.subject-block table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.subject-block th,
+.subject-block td {
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+/* Improve layout for smaller screens */
+@media (max-width: 768px) {
+  .subject-block table {
+    font-size: 0.8rem;
+    table-layout: fixed;
+  }
+
+  .subject-block th,
+  .subject-block td {
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+    text-align: center;
+  }
+
+  .subject-block table,
+  .subject-block thead,
+  .subject-block tbody,
+  .subject-block tr,
+  .subject-block th,
+  .subject-block td {
+    display: table;
+    width: 100%;
+  }
+}
+
+.summary {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.attendance-search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.attendance-search {
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}

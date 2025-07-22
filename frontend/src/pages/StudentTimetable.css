@@ -1,0 +1,136 @@
+.student-timetable-page {
+  padding: 1rem;
+  margin: 6rem auto 4rem auto;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  color: #1c2a5e;
+  background: linear-gradient(to bottom, #e0f2ff, #d2e9f7) !important;
+  border-radius: 16px;
+  /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05); */
+  box-sizing: border-box;
+}
+.outer-container {
+  height: 100vh;
+  background: linear-gradient(to bottom, #e0f2ff, #d2e9f7) !important;
+}
+.student-timetable-page h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* ✅ Scrollable wrapper for table */
+.timetable-grid {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ✅ Prevent table from shrinking on small devices */
+.time-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.time-table th,
+.time-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #fcfcfc;
+}
+
+.time-table th {
+  background-color: #e6f0ff;
+  color: #003366;
+  font-weight: bold;
+}
+
+.timetable-message {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #d1e8ff, #e0ffe6);
+  color: #1a3e72;
+  border-left: 6px solid #0077cc;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-title {
+  margin-top: 20px;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Mobile Responsiveness */
+/* @media screen and (max-width: 768px) {
+  .student-timetable-page {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .student-timetable-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .time-table th,
+  .time-table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .timetable-message {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .student-timetable-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .timetable-grid {
+    overflow-x: scroll;
+  }
+
+  .time-table th,
+  .time-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .timetable-message {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}

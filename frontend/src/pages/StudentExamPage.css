@@ -1,0 +1,194 @@
+.room-grid-section {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem;
+  background-color: #f4f6f8;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.room-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.grid-row {
+  display: flex;
+  gap: 6px;
+}
+
+.grid-cell {
+  width: 60px;
+  height: 40px;
+  background: #eaf4ff;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  transition: background-color 0.3s ease;
+}
+
+.grid-cell:hover {
+  background-color: #bbdefb;
+}
+
+.exam-page {
+  margin-top: 55px !important;
+  /* max-width: 1000px; */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.08);
+}
+
+.exam-page h2 {
+  text-align: center;
+  color: #1a237e;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  background-color: #e3f2fd;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.exam-page h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #0d47a1;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 6px;
+}
+
+.room-grid-section {
+  margin: 2rem 0;
+  background-color: #f4f6f8;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.room-grid-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.room-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid-cell {
+  width: 65px;
+  height: 45px;
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  transition: background-color 0.3s ease;
+}
+
+.grid-cell:hover {
+  background-color: #bbdefb;
+}
+
+/* --- Invigilators --- */
+
+.invigilator-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 0.5rem;
+}
+
+.invigilator-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f4ff;
+  border: 1px solid #b3d1ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.1);
+}
+
+.invigilator-room-card {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #d0e3ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.invigilator-room-card:hover {
+  background-color: #e3f2fd;
+}
+
+.invigilator-room-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1565c0;
+  margin-bottom: 0.5rem;
+}
+
+.invigilator-name {
+  font-weight: 500;
+  color: #2c3e50;
+  padding-left: 1rem;
+  position: relative;
+  list-style: none;
+}
+
+.invigilator-name::before {
+  position: absolute;
+  left: -1.2rem;
+}
+
+/* Highlight the current student’s roll number */
+.highlight-me {
+  background-color: #d1fae5 !important;
+  border: 2px solid #10b981;
+  font-weight: bold;
+  color: #065f46;
+}
+
+.no-seating-msg {
+  color: red;
+  font-weight: bold;
+  padding: 1rem;
+}

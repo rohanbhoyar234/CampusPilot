@@ -1,0 +1,137 @@
+.dashboard-container {
+  margin-top: 50px;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #eaf4ff, #f0f7ff) !important;
+
+  color: #1c2a5e;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1c2a5e;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1c2a5e;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.card-subtext {
+  font-size: 0.9rem;
+  color: #5c6f91;
+}
+
+.donut-chart-placeholder,
+.line-chart-placeholder {
+  height: 200px;
+  background: #dbe8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a4a7c;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.dashboard-chart {
+  margin-top: 2rem;
+}
+
+.dashboard-container {
+  padding: 2rem;
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-highlight {
+  background: #eaf6ff;
+  border-left: 6px solid #4a90e2;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.card-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.card-subtext {
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.chart-box,
+.chart-box-line {
+  margin-top: 1rem;
+  height: 200px;
+}
+
+.perf-list li,
+.activity-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.perf-list span {
+  font-weight: 600;
+}
+
+.online-status {
+  color: #27ae60;
+  font-weight: bold;
+}
