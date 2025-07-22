@@ -18,7 +18,7 @@ const StudentTimetable = () => {
     const fetchTimetable = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/timetable/student",
+          `${process.env.BACKEND_URI}/api/timetable/student`,
           {
             params: {
               branch: user.branch,

@@ -25,7 +25,7 @@ const ViewAttendance = () => {
     const fetchAttendance = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/attendance/student/${studentId}`
+          `${process.env.BACKEND_URI}/api/attendance/student/${studentId}`
         );
         setAttendanceData(res.data || {});
       } catch (err) {

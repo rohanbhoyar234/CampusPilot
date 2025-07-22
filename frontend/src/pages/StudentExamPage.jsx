@@ -15,7 +15,7 @@ const StudentExamPage = () => {
     }
 
     axios
-      .get("http://localhost:5000/api/publish/seating")
+      .get(`${process.env.BACKEND_URI}/api/publish/seating`)
       .then((res) => {
         console.log(" Fetched seating plan:", res.data);
         setPlan(res.data);

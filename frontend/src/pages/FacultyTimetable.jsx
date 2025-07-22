@@ -24,7 +24,7 @@ const FacultyTimetable = () => {
     const fetchTimetable = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/timetable/faculty/${facultyId}`
+          `${process.env.BACKEND_URI}/api/timetable/faculty/${facultyId}`
         );
 
         setFacultyName(res.data.facultyName);
